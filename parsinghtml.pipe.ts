@@ -22,7 +22,7 @@ export class SanitizedPipe implements PipeTransform {
 
 
 //for html file
- <div [innerHTML]="message.message | sanitized"></div>
+ <div [outerHTML]="message.message | sanitized"></div>
 <quill-editor [(ngModel)]="text" customToolbarPosition="bottom"  #editor placeholder="Type your message..."  [styles]="toolbarStyle">
   
   
